@@ -24,15 +24,15 @@ disqusShortname = 'TIMM' # <- Get form here : https://disqus.com
 [menu] # Menu management
 	[[menu.main]]
 		name = 'Home'
-		pageRef = '/'
+		url = '/'
 		weight = 10
 	[[menu.main]]
 		name = 'About'
-		pageRef = '/about'
+		url = '/about/'
 		weight = 15
 	[[menu.main]]
 		name = 'Tags'
-		pageRef = '/tags'
+		url = '/tags'
 		weight = 20
 
 [module]
