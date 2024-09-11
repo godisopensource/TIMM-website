@@ -1,0 +1,54 @@
+ baseURL = 'https://pehtheme-hugo.netlify.app/'
+languageCode = 'en-us'
+title = 'TIMM'
+theme = 'pehtheme-hugo'
+
+paginate = '6' # <- Set the desired number of posts per page
+summaryLength = '20' # <- 20 words are approximately 160 characters
+googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
+disqusShortname = 'TIMM' # <- Get form here : https://disqus.com
+
+[params]
+	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
+	description = 'A great independent music media focusing on all kind of artists and music genres.'
+	mainSections = 'posts'
+
+[author]
+	name = 'Paul Lardet'
+	bio = 'Composer and Engineer, I am passionate about music and always keen to discover new artists!'
+	avatar = '/images/pdp.jpg'
+	twitter = 'https://twitter.com/insertapps'
+	facebook = ''
+	instagram = 'https://instagram.com/godisopensource'
+
+[menu] # Menu management
+	[[menu.main]]
+		name = 'Home'
+		pageRef = '/'
+		weight = 10
+	[[menu.main]]
+		name = 'About'
+		pageRef = '/about'
+		weight = 15
+	[[menu.main]]
+		name = 'Tags'
+		pageRef = '/tags'
+		weight = 20
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+  [module.mounts] # Directing the static folder to assets.
+  	source = 'assets'
+  	target = 'static'
+
+[services]
+  [services.disqus]
+    shortname = 'disqus_J4wZXKaLfW'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[outputs.page]
+  home = ["HTML", "JSON"]
